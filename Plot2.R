@@ -16,6 +16,8 @@ Sys.setlocale("LC_TIME", "English")
 
 #plot2
 png("Plot2.png")
+#Setting the background to transparent to match the figures in the repository
+  par(bg="transparent")
 plot(Date,hhpwrc2[,"Global_active_power"],
      t="l",ylab="Global Active Power (kilowatts)",xlab="")
 dev.off()

@@ -16,10 +16,10 @@ Sys.setlocale("LC_TIME", "English")
 
 #plot4
 png("Plot4.png")
-
 #The plots will be organized in a 2x2 grid, and will be ordered by columns so 
 #the order in which the graphics are plotted is important.
-par(mfcol=c(2,2))
+#Also the background is set to transparent to match the example figures
+par(mfcol=c(2,2),bg="transparent")
 plot(Date,hhpwrc2[,"Global_active_power"],
      t="l",ylab="Global Active Power",xlab="")
 

@@ -16,6 +16,8 @@ Sys.setlocale("LC_TIME", "English")
 
 #plot3
 png("Plot3.png")
+#Setting the background to transparent to match the figures in the repository
+  par(bg="transparent")
 plot(Date,hhpwrc2[,"Sub_metering_1"],t="l",ylab="Energy sub metering",xlab="")
   lines(Date,hhpwrc2[,"Sub_metering_2"], t="l",ylab="",xlab="",col="orangered")
   lines(Date,hhpwrc2[,"Sub_metering_3"], t="l",ylab="",xlab="",col="blue")

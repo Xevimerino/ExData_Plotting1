@@ -14,6 +14,9 @@ Date<-strptime(hhpwrc2[,"Date"],format="%Y-%m-%d %H:%M:%S")
 
 #plot1
 png("Plot1.png")
+#Setting the background to transparent to match the figures in the repository
+  par(bg="transparent")
 hist(hhpwrc2[,"Global_active_power"],col="orangered",
      main="Global Active power",xlab="Global Active Power (kilowatts)")
 dev.off()
+  
